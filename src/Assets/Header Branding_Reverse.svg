@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="61.101"
+   height="61.101"
+   viewBox="0 0 61.101 61.101"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="Header Branding.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="3.8624571"
+     inkscape:cx="30.550501"
+     inkscape:cy="30.550501"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.a{fill:#fff;}</style>
+  </defs>
+  <g
+     transform="translate(-536.002 1713.694)"
+     id="g16"
+     style="fill:#000000">
+    <path
+       class="a"
+       d="M566.553-1710.4l27.259,27.259-27.259,27.259-27.259-27.259,27.259-27.259m0-3.292L536-1683.143l30.551,30.551,30.551-30.551-30.551-30.551Z"
+       id="path6"
+       style="fill:#000000" />
+    <g
+       transform="translate(542.714 -1706.982)"
+       id="g14"
+       style="fill:#000000">
+      <rect
+         class="a"
+         width="33.713"
+         height="8.808"
+         transform="translate(0 23.839) rotate(-45)"
+         id="rect8"
+         style="fill:#000000" />
+      <rect
+         class="a"
+         width="33.713"
+         height="8.808"
+         transform="translate(8.805 32.644) rotate(-45)"
+         id="rect10"
+         style="fill:#000000" />
+      <rect
+         class="a"
+         width="33.713"
+         height="8.808"
+         transform="translate(17.611 41.45) rotate(-45)"
+         id="rect12"
+         style="fill:#000000" />
+    </g>
+  </g>
+</svg>

@@ -9,19 +9,807 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.Header-header {
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-start;
+  justify-content: space-between;
+
+  position: absolute;
+
+  min-width: 96%; 
+  margin: 2%;
+}
+
+.Header-logo {
+  min-height: 7vh; 
+  min-width: 7vh;   
+}
+
+.Header-menu {
+  min-height: 2.5vh; 
+  min-width: 2.5vh;   
+  margin-top: 1vh;
+}
+
+.Panels-general {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+
+  width: 100%; 
+  height: 100%; 
+}
+
+.Panels-panel {
+  flex: 3;
+  height: 100vh; 
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+.Panels-panel-image {
+  width: 69vh;
+  height: 100vh; 
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.Panels-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 48vh;
+
+  position: relative;
+  font-size: 4vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  color: #FFFFFF;
+}
+
+.Underline {
+  height: 0.75vh;
+  width: 20vh;
+  background-color: #4E00E2;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2.5vh;
+}
+
+.Posts-general {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 6vh;
+  margin-right: 6vh;
+}
+
+.Posts-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+
+  font-size: 6vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  color: #000000;
+}
+
+.Post-content {
+  flex: 3;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-left: 6vh;
+  margin-right: 6vh;
+} 
+
+.Post-image {
+  min-height: 30vh;
+  /* width: 50vh; */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-color: #E6E6E6;
+}
+
+.Post-category {
+  font-size: 2.75vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  color: #4E00E2;
+}
+
+.Post-title {
+  font-size: 4vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  color: #000000;
+
+  margin-top: -0.5vh;
+}
+
+.Post-description {
+  font-size: 2vh;
+  font-family: 'Open Sans', sans-serif;
+  color: #707070;
+
+  margin-top: -1vh;
+}
+
+.Post-button {
+  background-color: white;
+  border: 2px solid #4E00E2; 
+  width: 100%;
+
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 3vh;
+
+  color:#000000;
+  font-size: 2.5vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+}
+
+.Posts-button {
+  background-color: #4E00E2;
+  border: 0px solid #707070; 
+  border-radius: 0.5vh;
+
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 30vh;
+  padding-right: 30vh;
+
+  color:#FFFFFF;
+  font-size: 3vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+}
+
+.Events-general {
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  margin-left: 6vh;
+
+  padding-bottom: 0.5vh;
+}
+
+.Events-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+
+  font-size: 6vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  color: #000000;
+}
+
+
+.Event-content {
+  background-color: #ffffff;
+
+  min-width: 30vh;
+
+  display: flex; 
+  flex-direction: column; 
+
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: flex-start;
+  
+  margin-right: 2.5vh;
+
+  padding: 2vh;
+
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+
+.Event-date {
+  font-size: 9vh;
+  font-family: 'BebasNeue-Book', sans-serif;
+  color: #ffffff;
+
+  line-height: 0vh;
+  margin-top: 5vh;
+}
+
+.Event-month {
+  font-size: 3vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  color: #ffffff;
+
+  line-height: 0vh;
+  margin-top: -3vh;
+}
+
+.Event-title {
+  font-size: 3vh;
+  font-family: 'BebasNeue-Book', sans-serif;
+  color: #ffffff;
+
+  margin-top: 4vh;
+}
+
+.Event-time {
+  font-size: 2vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  color: #ffffff;
+
+  line-height: 0vh;
+}
+
+.Event-location {
+  font-size: 2vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  color: #ffffff;
+
+  line-height: 1vh;
+  margin-top: 0vh;
+}
+
+::-webkit-scrollbar {
+  height: 1vh;  
+  width: 1.5vh;            
+  border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+  background: #707070;
+  border-radius: 2vh;
+  padding-top: 1vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: 2vh;
+  padding-top: 1vh;
+}
+
+.Contact-general {
+  background-color: #4E00E2;
+
+  /* height: 100vh;  */
+  padding-top: 5vh;
+  padding-bottom: 25vh;
+  margin-top: 25vh;
+
+  display: flex; 
+  flex-direction: column; 
+
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.Contact-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+
+  font-size: 6vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  color: #FFFFFF;
+}
+
+.Contact-form {
+  width: 85vh;
+
+  margin-left: -4vh;
+
+  /* background-color: #282c34; */
+
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.Contact-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Contact-item {
+  display: flex; 
+  flex-direction: column; 
+  /* flex: 2; */
+  width: 79vh;
+
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+
+.Contact-title {
+  font-size: 2vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  color: #FFFFFF;
+  margin-left: 4vh;
+}
+
+.Contact-field {
+  border: #BCE0FD solid 0.25vh;
+  border-radius: 0.5vh;
+  padding: 1.75vh;
+  width: 35.5vh;
+  /* margin-left: 4vh; */
+
+  font-size: 1.5vh;
+  font-family: 'Arial-Regular', sans-serif;
+  color: #707070;
+  margin-left: 4vh;
+}
+
+
+.Contact-select {
+  border: #BCE0FD solid 0.25vh;
+  border-radius: 0.5vh;
+  padding: 1.75vh;
+  width: 83vh;
+  /* margin-left: 4vh; */
+
+  font-size: 1.5vh;
+  font-family: 'Arial-Regular', sans-serif;
+  color: #707070;
+  margin-left: 4vh;
+}
+
+.Contact-single {
+  border: #BCE0FD solid 0.25vh;
+  border-radius: 0.5vh;
+  padding: 1.75vh;
+  width: 79vh;
+  /* height: 20vh; */
+  /* margin-left: 4vh; */
+
+  font-size: 1.5vh;
+  font-family: 'Arial-Regular', sans-serif;
+  color: #707070;
+  margin-left: 4vh;
+}
+
+.Contact-message {
+  border: #BCE0FD solid 0.25vh;
+  border-radius: 0.5vh;
+  padding: 1.75vh;
+  width: 100%;
+  height: 20vh;
+  /* margin-left: 4vh; */
+
+  font-size: 1.5vh;
+  font-family: 'Arial-Regular', sans-serif;
+  color: #707070;
+  margin-left: 4vh;
+}
+
+.Contact-button {
+  background-color: #000000;
+  border: #707070 none 0vh;
+  border-radius: 0.5vh;
+  margin-top: 4vh;
+  padding: 1.25vh;
+  width: 38vh;
+
+  font-size: 2.5vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  color: #ffffff;
+  margin-left: 4vh;
+}
+
+.Footer-general {
+  background-color: #4E00E2;
+  margin-top: -10vh;
+  padding: 2%;
+}
+
+.Footer-footer {
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-end;
+  justify-content: space-between;
+
+  min-width: 96%; 
+}
+
+.Footer-logo {
+  min-height: 7vh; 
+  min-width: 7vh;   
+}
+
+.Footer-text-div {
+  display: flex; 
+  flex-direction: row; 
+
+  border-right: #ffffff solid 0.25vh;
+}
+
+.Footer-text {
+  font-size: 2.5vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  
+  text-align: right;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+
+  margin-left: 2vh;
+  margin-right: 4vh;
+}
+
+.Footer-icons-div {
+  margin-left: 4vh; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+}
+
+.Footer-icon {
+  margin-left: 2vh;
+  margin-right: 2vh;
+  height: 2vh; 
+  width: 2vh;   
+}
+
+.Menu-general {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+
+  flex: 1;
+  height: 100vh; 
+}
+
+.Menu-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2.5vh;
+
+  position: relative;
+  font-size: 3vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  letter-spacing: 1.3px;
+  color: #000000;
+}
+
+.Menu-label:hover {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2.5vh;
+
+  position: relative;
+  font-size: 3vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  letter-spacing: 1.3px;
+  color: #4E00E2;
+}
+
+.About-banner {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+
+  flex: 1;
+  height: 70vh; 
+}
+
+.About-banner-text {
+  display: inline-block;
+  vertical-align: middle;
+
+  position: relative;
+  font-size: 8vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.About-intro {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+
+  padding-left: 40vh;
+  padding-right: 40vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+ 
+  /* height: 30vh;  */
+}
+
+.About-intro-text {
+  display: inline-block;
+  vertical-align: middle;
+
+  position: relative;
+  font: Bold 2vh Arial;
+  color: #707070;
+}
+
+.About-team {
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-start;
+  align-self: center;
+  justify-content: center;
+
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 10vh;
+  padding-right: 20vh;
+}
+
+.About-team-member-image {
+  /* width: 90vh; */
+  width: 80vh;
+}
+
+.About-team-member-general {
+  display: flex; 
+  flex: 2;
+  flex-direction: column; 
+
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: flex-start;
+
+  margin-left: 15vh;
+}
+
+.About-team-member-name {
+  position: relative;
+  font-size: 5vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #000000;
+
+  margin: 0vh;
+  margin-top: 8vh;
+}
+
+.About-team-member-title {
+  position: relative;
+  font-size: 2vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #707070;
+
+  margin: 0vh;
+  margin-top: 1vh;
+}
+
+.About-team-member-social {
+  margin-top: 2vh;
+}
+
+.About-social-icon {
+  height: 2.5vh;
+  margin-right: 5vh;
+  
+}
+
+.About-team-member-bio {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  font: 2vh  'Open Sans', sans-serif;;
+  color: #707070;
+
+  margin-top: 6vh;
+}
+
+.About-team-member-experience {
+  position: relative;
+  font-size: 3.25vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  letter-spacing: 2px;
+  color: #000000;
+
+  margin: 0vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.About-team-member-experience-list {
+  display: flex; 
+  flex-direction: column; 
+
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+
+.About-team-member-experience-item {
+  text-align: left;
+  position: relative;
+  font: 2vh  'Open Sans', sans-serif;
+  color: #707070;
+  margin-top: 0.75vh;
+  margin-bottom: 0.75vh;
+}
+
+.About-CTA {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 0vh;
+
+  font-size: 6vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+  color: #000000;
+}
+
+.About-button {
+  background-color: #4E00E2;
+  border: 0px solid #707070; 
+  border-radius: 0.5vh;
+
+  margin-top: 5vh;
+  margin-bottom: 30vh;
+
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 20vh;
+  padding-right: 20vh;
+
+  color:#FFFFFF;
+  font-size: 3vh;
+  font-family: 'BebasNeue-Regular', sans-serif;
+}
+
+.Services-general {
+  display: flex; 
+  flex-direction: column; 
+
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: flex-start;
+
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+}
+
+.Services-row {
+  display: flex; 
+  flex-direction: row; 
+
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+
+.Services-img {
+  /* flex: 3; */
+  width: 97.5vh;
+  height: 70vh;
+  background-color: #E6E6E6;
+}
+
+.Services-description-div {
+  flex: 1;
+  /* background-color: #000000; */
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.Service-description {
+  text-align: left;
+  position: relative;
+  font: 2.25vh  'Open Sans', sans-serif;
+  color: #707070;
+
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 15vh;
+  padding-right: 15vh;
+}
+
+.Talent-general {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 30vh;
+  margin-right: 30vh;
+}
+
+.Talent-panel {
+  background-color: #E6E6E6;
+  margin-left: 2vh;
+  margin-right: 2vh;
+
+  height: 80vh; 
+  width: 100vh;
+
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-end;
+}
+
+.Talent-name {
+  position: relative;
+  font-size: 5vh;
+  font-family: 'BebasNeue-Bold', sans-serif;
+  color: #707070;
+  letter-spacing: 1.85px;
+  margin: 0vh;
+  margin-bottom: 0.5vh;
+}
+
+.Talent-title {
+  position: relative;
+  font-size: 2.5vh;
+  font-family: 'BebasNeue-Book', sans-serif;
+  color: #707070;
+  letter-spacing: 0.95px;
+  margin: 0vh;
+  margin-bottom: 3.5vh;
+}
+
+.Talent-social {
+  margin-bottom: 10vh;
+}
+
+.Talent-social-icon {
+  position: relative;
+  height: 2.5vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -30,4 +818,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('./Assets/Fonts/BebasNeue-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Bold';
+  src: url('./Assets/Fonts/BebasNeue-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Book';
+  src: url('./Assets/Fonts/BebasNeue-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
