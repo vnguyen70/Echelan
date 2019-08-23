@@ -21,9 +21,9 @@ class Panels extends Component {
   render() {
     return (
       <div className="Panels-general">
-        <Panel title={"WHO WE ARE"} color={"#F2F2F2"} image={panel1}/>
-        <Panel title={"WHAT WE DO"} color={"#E6E6E6"} image={panel2}/>
-        <Panel title={"WHO WE WORK WITH"} color={"#F2F2F2"} image={panel3}/>
+        <Panel title={"WHO WE ARE"} color={"#F2F2F2"} image={panel1} setPage={this.props.setPage} page="about"/>
+        <Panel title={"WHAT WE DO"} color={"#E6E6E6"} image={panel2} setPage={this.props.setPage} page="services"/>
+        <Panel title={"WHO WE WORK WITH"} color={"#F2F2F2"} image={panel3} setPage={this.props.setPage} page="talent"/>
       </div>
       );
     }

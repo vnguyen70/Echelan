@@ -12,15 +12,21 @@ import LogoIcon from '../Assets/Header Branding.svg';
 import MenuIcon from '../Assets/Menu.svg';
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {page: this.props.page};
+  }
+
   render(){
     return (
       <div className="App">
-       <Header setView = {this.props.setView} logoIcon = {LogoIcon} menuIcon = {MenuIcon}/>
-       <Panels/>
-       <Posts/>
-       <Events/>
-       <Contacts fontColor = "#FFFFFF" bgColor = "#4E00E2" marginTop = "25vh"/>
-       <Footer/>
+        <Header prevPage={'home'} page={'menu'} setPage={this.props.setPage} logoIcon = {LogoIcon} menuIcon = {MenuIcon}/>
+        <Panels setPage={this.props.setPage} />
+        <Posts/>
+        <Events/>
+        <Contacts fontColor = "#FFFFFF" bgColor = "#4E00E2" marginTop = "25vh"/>
+        <Footer setPage={this.props.setPage}/>
       </div>
     );
   }

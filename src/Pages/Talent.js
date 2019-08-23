@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
 
 import LogoIcon from '../Assets/Header Branding.svg';
@@ -15,7 +15,8 @@ import TalentBanner from '../Assets/TalentBanner.png';
 
 import '../App.css';
 
-import Home from '../Pages/Home';
+import DetailedHeader from '../Components/Detailed/DetailedHeader';
+import DetailedContact from '../Components/Detailed/DetailedContact';
 
 class Talent extends React.Component {
   setView = page => {
@@ -25,27 +26,12 @@ class Talent extends React.Component {
   render() {
     return(
       <div>
-        <Router>
-          <div className="Header">
-            <header className="Header-header">
-              <img src={LogoIcon} className="Header-logo" alt="logo" />
-              <Link to="/">
-                <img src={MenuIcon} className="Header-menu" alt="menu" /> 
-              </Link>
-            </header>
-            <div>
-                <Route exact path="/" component={Home} />
-            </div>
-          </div>
-        </Router>
-        <div className="About-banner" style={{backgroundImage: "url(" + TalentBanner + ")"}}>
-          <p className="About-banner-text">WE WORK WITH AMAZING TALENT</p>
-        </div>
-        <div className="About-intro">
-          <p className="About-intro-text">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-          </p>
-        </div>
+        <Header prevPage={"talent"} page={'menu'} setPage={this.props.setPage} logoIcon = {LogoIcon} menuIcon = {MenuIcon}/>
+        <DetailedHeader 
+          title="WE WORK WITH AMAZING TALENT"
+          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,"
+          bannerImage={TalentBanner}
+        />
         <div className="Talent-general">
           <div className="Talent-panel">
             <p className="Talent-name">ARTIST NAME</p>
@@ -68,11 +54,8 @@ class Talent extends React.Component {
             </div>
           </div>
         </div>
-        <div>
-          <h1 className="About-CTA">LET'S WORK!</h1>
-          <button className="About-button">HIT US UP!</button>
-        </div>
-        <Footer/>
+        <DetailedContact setPage={this.props.setPage}/>
+        <Footer setPage={this.props.setPage}/>
       </div>
     ); 
   }

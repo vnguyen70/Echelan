@@ -5,7 +5,7 @@ class Panel extends Component {
   render() {
     return (
       <div className="Panels-panel" style={{backgroundImage: "url(" + this.props.image + ")"}}> 
-        <p className="Panels-label">{this.props.title}</p>
+        <p className="Panels-label" onClick={() => this.props.setPage(this.props.page)}>{this.props.title}</p>
         <div className="Underline"/>
       </div>
     );  

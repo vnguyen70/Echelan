@@ -43,7 +43,7 @@ class Contacts extends Component {
           <div className="Contact-row">
             <div className="Contact-item">
               <p className="Contact-title" style={{color: this.props.fontColor}}>MESSAGE</p>
-              <input type="text" className="Contact-message"/>
+              <textarea type="text" className="Contact-message"/>
             </div>
           </div>
           <button className="Contact-button">SUBMIT</button>
