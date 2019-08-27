@@ -40,10 +40,18 @@
   min-width: 7vh;   
 }
 
+.Header-logo:hover {
+  cursor: pointer;
+}
+
 .Header-menu {
   min-height: 2.5vh; 
   min-width: 2.5vh;   
   margin-top: 1vh;
+}
+
+.Header-menu:hover {
+  cursor: pointer;
 }
 
 .Panels-general {
@@ -85,6 +93,10 @@
   font-size: 4vh;
   font-family: 'BebasNeue-Regular', sans-serif;
   color: #FFFFFF;
+}
+
+.Panels-label:hover {
+  cursor: pointer;
 }
 
 .Underline {
@@ -176,6 +188,10 @@
   font-family: 'BebasNeue-Regular', sans-serif;
 }
 
+.Post-button:hover {
+  cursor: pointer;
+}
+
 .Posts-button {
   background-color: #4E00E2;
   border: 0px solid #707070; 
@@ -192,6 +208,10 @@
   color:#FFFFFF;
   font-size: 3vh;
   font-family: 'BebasNeue-Regular', sans-serif;
+}
+
+.Posts-button:hover {
+  cursor: pointer;
 }
 
 .Events-general {
@@ -440,6 +460,10 @@
   color: #ffffff;
 }
 
+.Contact-button:hover {
+  cursor: pointer;
+}
+
 .Footer-general {
   background-color: #4E00E2;
   margin-top: -10vh;
@@ -458,6 +482,10 @@
 .Footer-logo {
   min-height: 7vh; 
   min-width: 7vh;   
+}
+
+.Footer-logo:hover { 
+  cursor: pointer;
 }
 
 .Footer-text-div {
@@ -479,6 +507,10 @@
   margin-right: 4vh;
 }
 
+.Footer-text:hover {
+  cursor: pointer;
+}
+
 .Footer-icons-div {
   margin-left: 4vh; 
   display: flex; 
@@ -491,6 +523,10 @@
   margin-right: 2vh;
   height: 2vh; 
   width: 2vh;   
+}
+
+.Footer-icon:hover {
+  cursor: pointer;
 }
 
 .Menu-general {
@@ -520,6 +556,7 @@
   display: inline-block;
   vertical-align: middle;
   margin-top: 2.5vh;
+  cursor: pointer;
 
   position: relative;
   font-size: 3vh;
@@ -734,6 +771,10 @@
   font-family: 'BebasNeue-Regular', sans-serif;
 }
 
+.About-button:hover {
+  cursor: pointer;
+}
+
 .Services-general {
   display: flex; 
   flex-direction: column; 
@@ -839,6 +880,11 @@
   margin-left: 3vh;
   margin-right: 3vh;
 }
+
+.Talent-social-icon:hover {
+  cursor: pointer;
+}
+
 
 
 @keyframes App-logo-spin {

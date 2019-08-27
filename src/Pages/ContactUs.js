@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
@@ -7,8 +8,6 @@ import LogoIcon from '../Assets/Header Branding.svg';
 import MenuIcon from '../Assets/Menu.svg';
 
 import ContactBanner from '../Assets/ContactBanner.png';
-
-import '../App.css';
 
 import Contacts from '../Components/Contacts/Contacts';
 

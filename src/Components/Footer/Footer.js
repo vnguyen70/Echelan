@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../App.css';
+
 import Logo from '../../Assets/Footer Branding.svg';
 import Instagram from '../../Assets/Instagram.svg';
 import Twitter from '../../Assets/Twitter.svg';
 import Facebook from '../../Assets/Facebook.svg';
 import Web from '../../Assets/web.svg';
-import '../../App.css';
 
 class Footer extends React.Component {
   render() {

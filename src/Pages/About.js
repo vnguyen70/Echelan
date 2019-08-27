@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
@@ -13,8 +14,6 @@ import Facebook from '../Assets/Facebook_Reverse.svg';
 import AboutBanner from '../Assets/AboutBanner.png';
 import Tyhiem from '../Assets/About_Tyhiem.png';
 
-import '../App.css';
-
 import DetailedHeader from '../Components/Detailed/DetailedHeader';
 import DetailedContact from '../Components/Detailed/DetailedContact';
 
@@ -26,14 +25,14 @@ class About extends React.Component {
   render() {
     return(
       <div>
-        <Header prevPage={"about"} page={'menu'} setPage={this.props.setPage} logoIcon = {LogoIcon} menuIcon = {MenuIcon}/>
+        <Header prevPage={"about"} page={'menu'} setPage={this.props.setPage} logoIcon = {LogoIcon} menuIcon = {MenuIcon} alt="banner" />
         <DetailedHeader 
           title="WE ARE A DIFFERENT TYPE OF MUSIC COMPANY"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,"
           bannerImage={AboutBanner}
         />
         <div className="About-team">
-          <img src={Tyhiem} className="About-team-member-image"/>
+          <img src={Tyhiem} className="About-team-member-image" alt="member"/>
           <div className="About-team-member-general">
             <p className="About-team-member-name">TYHIEM CANNON</p>
             <p className="About-team-member-title">FOUNDER</p>
