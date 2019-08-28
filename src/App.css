@@ -99,12 +99,16 @@
   cursor: pointer;
 }
 
+.Panels-label:hover + .Underline {
+  display: block;
+}
+
 .Underline {
   height: 0.75vh;
   width: 20vh;
   background-color: #4E00E2;
 
-  display: block;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   margin-top: -2.5vh;

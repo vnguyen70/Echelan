@@ -12,32 +12,38 @@ import Talent from './Pages/Talent';
 import ContactUs from './Pages/ContactUs';
 
 const history = createBrowserHistory(); 
+var page = ''; 
+var prevPage = '';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      page: 'home', 
-      prevPage: 'home',
+      prevPage: 'home', 
+      page: 'home',
     };
 
     this.setPage = this.setPage.bind(this);
   }
 
   setPage(newPage) {
-    console.log(this.state);
     if(newPage==='home') {
       history.push('/'); 
     } else {
       history.push('/' + newPage); 
     }
-  
+
     this.setState({
-      page: newPage,  
+      prevPage: this.state.page, 
+      page: newPage, 
     });
 
-    window.location.reload(false);
+
+    console.log("prevPage = ", this.state.prevPage);
+    console.log("page = ", this.state.page);
+
+
     window.scrollTo(0, 0);
   }
   
